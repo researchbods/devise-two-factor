@@ -1,7 +1,8 @@
+require 'devise_two_factor/strategy_mixin'
+
 module Devise
   module Strategies
     class TwoFactorAuthenticatable < Devise::Strategies::DatabaseAuthenticatable
-
       def authenticate!
         resource = mapping.to.find_for_database_authentication(authentication_hash)
         # We authenticate in two cases:

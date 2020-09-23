@@ -1,4 +1,7 @@
 require 'devise'
+require 'devise_two_factor/two_step_concern'
+require 'devise_two_factor/view_helpers'
+require 'devise_two_factor/token_codec'
 require 'devise_two_factor/models'
 require 'devise_two_factor/strategies'
 
